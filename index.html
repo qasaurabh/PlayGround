@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>CRUD Operations</h1>
+        <form>
+          <div>All fields with an asterisk(<span class="required">*</span>) are required fields</div>
+            <br><br>
+            <label for="name">Full name<sup style="color: red">*</sup>:</label>
+            <input type="text" id="name" required="true" placeholder="Enter your full name">
+            <br><br>
+            <label for="dob">Date of birth<sup style="color: red">*</sup>:</label>
+            <input type="text" id="dob" required="true" placeholder="dd/mm/yyyy">
+            <br><br>
+            <label for="gender">Gender<sup style="color: red">*</sup>:</label>
+            <input type="text" id="gender" required="true" placeholder="Enter your gender">
+            <br><br>
+            <label for="address">Address<sup style="color: red">*</sup>:</label>
+            <input type="text" id="address" required="true" placeholder="Enter your address">
+            <br><br>
+            <button id="btn">Add user</button>  
+        </form>
+        <br>
+        <h2>User Management</h2>
+    <br>
+            <!-- Dropdown for filtering addresses -->
+            <label for="addressDropdown">Filter by Address:</label>
+            <select id="addressDropdown">
+                <option value="">All Addresses</option> <!-- Default option to show all addresses -->
+            </select>
+
+        <table id="userTable" summary="User Management">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userData">
+                <!-- User data will be dynamically added here -->
+            </tbody>
+        </table>
+
+
+        <div id="myModal" class="modal" role="dialog" aria-labelledby="modalName" aria-modal="true">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <button class="close" id="close" aria-label="Close">&times;</button>
+                <h2 id="modalName">Edit User Info</h2>
+                <div>All fields marked with asterisk (<span class="required">*</span>) are required fields</div>
+                <br>
+                <label for="newName">Full name<sup class="required">*</sup>:</label>
+                <input type="text" id="newName" required placeholder="Enter your full name">
+                <br><br>
+                <label for="newDob">Date of birth<sup class="required">*</sup>:</label>
+                <input type="text" id="newDob" required placeholder="dd/mm/yyyy">
+                <br><br>
+                <label for="newGender">Gender<sup class="required">*</sup>:</label>
+                <input type="text" id="newGender" required placeholder="Enter your gender">
+                <br><br>
+                <label for="newAddress">Address<sup class="required">*</sup>:</label>
+                <input type="text" id="newAddress" required placeholder="Enter your address">
+                <br><br>
+                <button id="save" class="save">Save Changes</button>
+                <button id="cancel" class="cancel">Cancel</button>
+            </div>
+        
+        </div>
+
+
+    </main>
+
+<script src="index2.js"></script>
+</body>
+</html>
+
