@@ -1,0 +1,294 @@
+#btn{
+    background-color: #0071DC;
+    color: #ffffff;
+    height: 36px;
+    width: 96px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.save{
+  background-color: #0071DC;
+  color: #ffffff;
+  height: 32px;
+  width: 110px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel{
+  color: #2e2f32;
+  height: 32px;
+  width: 110px;
+  border-radius: 5px;
+  border: 2px solid #ACADB0;
+  cursor: pointer;
+}
+
+
+.close{
+  color: #2e2f32;
+  border: none;
+  cursor: pointer;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+form{
+    margin-left: 10px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* CSS for Edit and Delete buttons */
+.action-buttons button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.action-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+.edit-button {
+  background-color: #0071DC;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-right: 8px;
+  height: 24px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #DE1C24;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  height: 24px;
+  width: 60px;
+  cursor: pointer;
+}
+
+#btn[disabled], #save[disabled] {
+  background-color: #cccccc; /* Change background color */
+  color: #666666; /* Change text color */
+  cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+  opacity: 0.9; /* Reduce opacity to visually indicate it's disabled */
+}
+
+/* Optional: Hover effect */
+#btn[disabled]:hover {
+  background-color: #cccccc; /* Change background color on hover */
+  color: #666666; /* Change text color on hover */
+  opacity: 0.7; /* Keep opacity same on hover */
+}
+
+
+        /* Modal styles */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.5);
+          overflow-y: scroll;
+      }
+
+      .modal-content {
+          background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+          max-width: 500px;
+          border-radius: 5px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+      }
+
+      /* Additional styles */
+      .required {
+          color: red;
+      }
+
+
+
+
+
+
+
+
+
+
+      /* Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+/* Main */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+/* Headings */
+h1, h2 {
+  color: #333;
+}
+
+/* Form */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  max-width: 500px;
+  max-height: 90vh; 
+  overflow-y: auto;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #888;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.required {
+  color: red;
+}
+
+
+
+
+
+/* Custom focus styles */
+:focus {
+  outline: none; /* Remove default browser focus outline */
+}
+
+/* Focus indicator styles */
+:focus-visible {
+  outline: 2px solid #007bff; /* Blue outline for focus-visible elements */
+  outline-offset: 2px; /* Ensure outline is visible even with border-radius */
+}
+
+/* Optionally, add additional styling for specific elements */
+/* Example: Button */
+button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4); /* Add a shadow around the button */
+}
